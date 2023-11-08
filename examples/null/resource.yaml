@@ -1,0 +1,14 @@
+# SPDX-FileCopyrightText: 2023 The Crossplane Authors <https://crossplane.io>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+apiVersion: null.template.crossplane.io/v1alpha1
+kind: Resource
+metadata:
+  name: example
+spec:
+  forProvider:
+    triggers:
+      example-trigger: example-value
+  providerConfigRef:
+    name: default
