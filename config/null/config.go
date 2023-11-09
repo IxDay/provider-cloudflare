@@ -1,17 +1,12 @@
-/*
-Copyright 2021 Upbound Inc.
-*/
-
 package null
 
-import (
-	ujconfig "github.com/upbound/upjet/pkg/config"
-)
+import "github.com/upbound/upjet/pkg/config"
 
-// Configure configures the null group
-func Configure(p *ujconfig.Provider) {
-	p.AddResourceConfigurator("null_resource", func(r *ujconfig.Resource) {
-		r.Kind = "Resource"
-		// And other overrides.
-	})
+// Configure configures individual resources by adding custom ResourceConfigurators.
+func Configure(p *config.Provider) {
+	// p.AddResourceConfigurator("github_repository", func(r *config.Resource) {
+	//     // We need to override the default group that upjet generated for
+	//     // this resource, which would be "github"
+	//     r.ShortGroup = "repository"
+	// })
 }

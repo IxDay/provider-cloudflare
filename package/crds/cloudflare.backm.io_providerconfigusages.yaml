@@ -5,14 +5,14 @@ metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.11.3
   creationTimestamp: null
-  name: providerconfigusages.template.upbound.io
+  name: providerconfigusages.cloudflare.backm.io
 spec:
-  group: template.upbound.io
+  group: cloudflare.backm.io
   names:
     categories:
     - crossplane
     - provider
-    - template
+    - cloudflare
     kind: ProviderConfigUsage
     listKind: ProviderConfigUsageList
     plural: providerconfigusages
