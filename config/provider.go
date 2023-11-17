@@ -10,7 +10,8 @@ import (
 
 	ujconfig "github.com/upbound/upjet/pkg/config"
 
-	"github.com/IxDay/provider-cloudflare/config/null"
+	"github.com/IxDay/provider-cloudflare/config/branch"
+	"github.com/IxDay/provider-cloudflare/config/repository"
 )
 
 const (
@@ -36,7 +37,8 @@ func GetProvider() *ujconfig.Provider {
 
 	for _, configure := range []func(provider *ujconfig.Provider){
 		// add custom config functions
-		null.Configure,
+		repository.Configure,
+		branch.Configure,
 	} {
 		configure(pc)
 	}

@@ -6,14 +6,12 @@ PROJECT_REPO ?= github.com/IxDay/$(PROJECT_NAME)
 
 export TERRAFORM_VERSION ?= 1.5.5
 
-export TERRAFORM_PROVIDER_SOURCE ?= hashicorp/null
-export TERRAFORM_PROVIDER_REPO ?= https://github.com/hashicorp/terraform-provider-null
-export TERRAFORM_PROVIDER_VERSION ?= 3.1.0
-export TERRAFORM_PROVIDER_DOWNLOAD_NAME ?= terraform-provider-null
-export TERRAFORM_PROVIDER_DOWNLOAD_URL_PREFIX ?= https://releases.hashicorp.com/$(TERRAFORM_PROVIDER_DOWNLOAD_NAME)/$(TERRAFORM_PROVIDER_VERSION)
-export TERRAFORM_NATIVE_PROVIDER_BINARY ?= terraform-provider-null_v3.1.0_x5
-export TERRAFORM_DOCS_PATH ?= docs/resources
-
+export TERRAFORM_PROVIDER_SOURCE := integrations/github
+export TERRAFORM_PROVIDER_REPO := https://github.com/integrations/terraform-provider-github
+export TERRAFORM_PROVIDER_VERSION := 5.32.0
+export TERRAFORM_PROVIDER_DOWNLOAD_NAME := terraform-provider-github
+export TERRAFORM_NATIVE_PROVIDER_BINARY := terraform-provider-github_v5.32.0
+export TERRAFORM_DOCS_PATH := website/docs/r
 
 PLATFORMS ?= linux_amd64 linux_arm64
 
