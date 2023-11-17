@@ -1,0 +1,12 @@
+apiVersion: branch.backm.io/v1alpha1
+kind: Branch
+metadata:
+  labels:
+    repository: foo
+  name: development
+spec:
+  forProvider:
+    repositorySelector:
+      matchLabels:
+        repository: foo
+

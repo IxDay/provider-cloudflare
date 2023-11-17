@@ -2,6 +2,8 @@ apiVersion: repository.backm.io/v1alpha1
 kind: Repository
 metadata:
   name: foo
+  labels:
+    repository: foo
   annotations:
     crossplane.io/external-name: Foo
 spec:
