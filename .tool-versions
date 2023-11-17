@@ -1,1 +1,5 @@
 terraform 1.5.5
+golang system
+kind 0.17.0
+direnv 2.32.3
+kubectl 1.28.2
